@@ -8,3 +8,4 @@ install-playwright-deps.sh
 pyvevn.cfg
 sustainabletextautomation/*
 pyvenv.cfg
+automation/variables.env
