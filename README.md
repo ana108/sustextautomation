@@ -14,6 +14,8 @@ source sustainabletextautomation/bin/activate
 pip install pytest-playwright  
 playwright install  
 ```
+## Add variables file to repository
+Include a variables.env file inside the automation directory before proceeding  
 To run  
 ```commandline
 pytest
