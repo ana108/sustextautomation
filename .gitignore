@@ -1,0 +1,10 @@
+bin/*
+.idea/*
+lib/*
+**/__pycache__/*
+__pycache__/*
+lib64
+install-playwright-deps.sh
+pyvevn.cfg
+sustainabletextautomation/*
+pyvenv.cfg
