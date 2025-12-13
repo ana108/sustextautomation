@@ -33,4 +33,12 @@ def test_login_form_opens(page: Page, staging_url: str):
     #checks if the form open after clicking on the sign in button
     expect(page.get_by_role("heading", name="Welcome to   Sustainable Text!")).to_be_visible()
 
+def test_login_faliure(page: Page, staging_url : str):
+    page.goto(staging_url)
+
+    page.get_by_role("button", name="Sign in").click()
+    page.get_by_role("textbox", name="Login").fill("arpanraval223@gmail.com")
+    page.get_by_role("textbox", name="Password").fill("@Rp@n2242")
+    page.get_by_role("button", name="Continue").click()
+    expect(page.get_by_text("Invalid password. Please try again")).to_be_visible()
 
