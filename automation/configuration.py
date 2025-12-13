@@ -1,3 +1,6 @@
+import os
+from pathlib import Path
+
 class Configuration:
     # Class attribute (shared by all instances of the class)
 
@@ -7,7 +10,9 @@ class Configuration:
         # Posted by SilentGhost, modified by community. See post 'Timeline' for change history
         # Retrieved 2025-12-05, License - CC BY-SA 4.0
         self.environment_vars = {}
-        with open(variablesFile) as file:
+        BASE_DIR = Path(__file__).resolve().parent
+        ENV_PATH = BASE_DIR / variablesFile
+        with open(ENV_PATH) as file:
             lines = [line.rstrip() for line in file]
             for env_var in lines:
                 value_pair = env_var.split('=', 1)
