@@ -61,9 +61,4 @@ Add remote, to enable pushing changes to github
 git remote add "origin" git@github.com:ana108/sustextautomation.git
 
 ```
-Alternatively, if you get prompted for a username and password, you may need to modify your remote url
-```
-git remote set-url origin https://github.com/ana108/sustextautomation.git
-```
-You'll still need to enter your username / password one more time
 Password doesn't work in Github anymore, you will need to generate yourself a Github token, which you can do by going to Profile -> Settings -> Developer Settings -> Personal access tokens. You can use the token as password
