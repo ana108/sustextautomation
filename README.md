@@ -39,3 +39,20 @@ Change "pytest" in CMD command in Dockerfile to "bash", and run following
 ```commandline
 docker run -it sustextautomation
 ```
+
+
+Using Github
+```
+git clone https://github.com/ana108/sustextautomation.git
+```
+
+Creating a branch
+```
+git checkout -b updateReadmeWithGithub
+```
+
+Add remote, to enable pushing changes to github
+```
+git remote add "origin" git@github.com:ana108/sustextautomation.git
+
+```
