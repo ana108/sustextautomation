@@ -9,3 +9,4 @@ pyvevn.cfg
 sustainabletextautomation/*
 pyvenv.cfg
 automation/variables.env
+automation/arpans_private_key.priv 

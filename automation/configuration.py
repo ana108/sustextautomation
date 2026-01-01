@@ -15,13 +15,19 @@ class Configuration:
         with open(ENV_PATH) as file:
             lines = [line.rstrip() for line in file]
             for env_var in lines:
-                value_pair = env_var.split('=', 1)
-                self.environment_vars[value_pair[0]] = value_pair[1]
+                key, value = env_var.split('=', 1)
+                self.environment_vars[key] = value
 
             print(self.environment_vars)
 
     def get_staging_host(self):
         return self.environment_vars["STAGING_HOST"]
+    
+    def get_google_user(self):
+        return self.environment_vars["GOOGLE_USER"]
+    
+    def get_google_password(self):
+        return self.environment_vars["GOOGLE_PWD"]
 
     # # Another instance method
     # def get_age_in_dog_years(self):
